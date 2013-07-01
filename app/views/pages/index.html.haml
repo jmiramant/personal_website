@@ -1,0 +1,29 @@
+%header
+	%hgroup
+		%a{:href => '/'}>josh miramant
+	%ul.navigation
+		%li{"data-slide" => "1"} Me
+		%li{"data-slide" => "2"} Projects
+		%li{"data-slide" => "3"} Passions
+		%li{"data-slide" => "4"} Contact
+%body
+	#slide1.slide{"data-slide" => "1", "data-stellar-background-ratio" => "0.5"}
+		=image_tag "me_cooking.jpg", class: 'mephoto'
+		%a.button{"data-slide" => "2", :title => ""}
+	#slide2.slide{"data-slide" => "2", "data-stellar-background-ratio" => "0.5"}
+		.wrapper
+		%span.slideno Projects
+		%a.button{"data-slide" => "3", :title => ""}
+	#slide3.slide{"data-slide" => "3", "data-stellar-background-ratio" => "0.5"}
+		.wrapper
+			=image_tag "slide3/freelance.png", alt: "", "data-stellar-ratio" => "1.4", "data-stellar-vertical-offset" => "-102"
+			=image_tag "slide3/psdtuts.png", alt: "", "data-stellar-ratio" => "1.5", "data-stellar-vertical-offset" => "-53"
+			=image_tag "slide3/rockable.png", alt: "", "data-stellar-ratio" => "2.7", "data-stellar-vertical-offset" => "-200"
+			=image_tag "slide3/themeforest.png", alt: "", "data-stellar-ratio" => "3", "data-stellar-vertical-offset" => "-200"
+			=image_tag "slide3/tutshub.png", alt: "", "data-stellar-ratio" => "1", "data-stellar-vertical-offset" => "-200"
+			=image_tag "slide3/psdtuts.png", alt: "", "data-stellar-ratio" => "1.5", "data-stellar-vertical-offset" => "-200"
+		%span.slideno Passions
+		%a.button{"data-slide" => "4", :title => ""}
+	#slide4.slide{"data-slide" => "4", "data-stellar-background-ratio" => "0"}
+		%span.slideno Contact
+		%span.parallaxbg which sprite?

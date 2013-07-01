@@ -1,0 +1,6 @@
+''''Heyo Friends!
+
+
+This a rails at for my personal website!
+
+-Josh
