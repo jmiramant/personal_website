@@ -14,9 +14,10 @@ html, body {
 
 header {
   height: 60px;
+  width: 100%;
   position: fixed;
   z-index: 2;
-  background-color: #F3F0F0;
+  background-color: rgba(255,255,255,0.6);
   font-family: brandon_grotesque_regularRg;
   a{
     text-decoration: none;

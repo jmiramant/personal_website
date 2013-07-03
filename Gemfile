@@ -12,6 +12,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'haml'
   gem 'uglifier', '>= 1.0.3'
+  gem 'skrollr-rails'
 end
 
 group :test, :development do
