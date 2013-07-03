@@ -1,13 +1,8 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: brandon;
-    src: local(brandon_font), url('fonts/Brandon_reg.otf') format('opentype');
-}
-
 html, body {
   color: #504a46;
-  font-family: 'Sans Serif','Georgia',serif;
+  font-family: 'brandon_grotesque_regularRg','Georgia',serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   min-height: 100%;
@@ -19,16 +14,31 @@ html, body {
 
 header {
   height: 60px;
+  position: fixed;
+  z-index: 2;
   background-color: #F3F0F0;
-  border-bottom: 1px solid #E0E0E0;
+  font-family: brandon_grotesque_regularRg;
   a{
     text-decoration: none;
   }
 }
 
+hgroup {
+  position: fixed;
+  font-size: 24px;
+  top: 10px;
+  left: 35px;
+  a{
+    color: #504a46;
+  }
+  a:hover{
+    color:#363636;
+  }
+}
+
 .navigation {
   position: fixed;
-  right: 110px;
+  right: 35px;
   z-index: 1;
   top: -3px;
   li {
@@ -38,30 +48,28 @@ header {
     line-height: 30px;
     margin-bottom: 2px;
     font-weight: bold;
-    -webkit-transition: all .2s ease-in-out;
+    -webkit-transition: (cursor, color) .2s ease-in-out;
     text-align: center;
     width: 71px;
     &:hover {
-      font-size: 20px;
       cursor: pointer;
+      color: #363636;
     }
   }
 }
 
 .active {
-  font-size: 25px;
+  color: #afafaf;
+  text-transform: uppercase;
   cursor: pointer;
-  width: 80px!important;
   &:hover{
-    font-size: 105px;
+    color: #504A46;
   }
 }
 
 .mephoto {
   position: fixed;
-  top: 50%;
   left: 50%;
-  margin-top: -41px;
   margin-left: -223px;
   z-index: 1;
   width: 214px;

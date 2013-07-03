@@ -1,4 +1,4 @@
-%header
+%header#home
 	%hgroup
 		%a{:href => '/'}>josh miramant
 	%ul.navigation
@@ -8,7 +8,7 @@
 		%li{"data-slide" => "4"} Contact
 %body
 	#slide1.slide{"data-slide" => "1", "data-stellar-background-ratio" => "0.5"}
-		=image_tag "me_cooking.jpg", class: 'mephoto'
+		=image_tag "me_cooking.jpg", class: 'mephoto', alt: "", "data-stellar-ratio" => "2.4", "data-stellar-vertical-offset" => "-102", "data-stellar-horizontal-offset" => "20"
 		%a.button{"data-slide" => "2", :title => ""}
 	#slide2.slide{"data-slide" => "2", "data-stellar-background-ratio" => "0.5"}
 		.wrapper
