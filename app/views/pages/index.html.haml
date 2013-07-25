@@ -8,12 +8,48 @@
 		%li{"data-slide" => "4"} Contact
 %body
 	#slide1.slide{"data-slide" => "1", "data-stellar-background-ratio" => "0.5"}
-		=image_tag "me_cooking.jpg", class: 'mephoto', alt: "", "data-stellar-ratio" => "2.4", "data-stellar-vertical-offset" => "-102", "data-stellar-horizontal-offset" => "20"
-		%a.button{"data-slide" => "2", :title => ""}
+		.content_one{alt: "", "data-stellar-ratio" => "2.3", "data-stellar-vertical-offset" => "-170", "data-stellar-horizontal-offset" => "0"}
+			%div
+				=image_tag "me_cooking.jpg", class: 'intro mephoto'
+				.intro.intro_box
+					.intro_title
+						Hello. I'm Josh
+					.intro_message
+						I'm a web-developer, adventurer and philonist. I bet you're wondering, "Hey Josh, you say your a <span data-slide="2"><strong>web-developer</strong></span>...prove it! That goes for <span data-slide="4"><strong>adventuring</strong></span> and philonios.. philonize... <span data-slide="3"><strong>the last one too</strong></span>!"
+			%a.button{"data-slide" => "2", :title => ""}
+				V
 	#slide2.slide{"data-slide" => "2", "data-stellar-background-ratio" => "0.5"}
 		.wrapper
-		%span.slideno Projects
+			.project.one{alt: "", "data-slide" => "5", "data-stellar-ratio" => "2", "data-stellar-vertical-offset" => "0"}
+				Staance
+				.text.t_one
+					<span id='p_text'>Staance</span>
+					88% test-coverage (rspec, Capybara)
+					multi-auth social login built atop Devise Gem responsive design using Compass, bourbon, neat Full administrator functionality
+					api’s: stripe, Facebook, twitter, Disqus
+					%a{"href" => "http://github.com/jmiramant/staance"}
+						Github
+			.project.two{alt: "", "data-slide" => "6", "data-stellar-ratio" => "2", "data-stellar-vertical-offset" => "0"}
+				Financial Literacy Month
+				.text.t_two
+					<span id='p_text'>Financial Literacy Month Microsite</span>
+					%a{"href" => "http://github.com/jmiramant"}
+						Github
+			.project.three{alt: "", "data-slide" => "7", "data-stellar-ratio" => "2", "data-stellar-vertical-offset" => "0"}
+				Daily Draft
+				.text.t_three
+					<span id='p_text'>Daily Draft</span>
+					%a{"href" => "http://github.com/jmiramant"}
+						Github
 		%a.button{"data-slide" => "3", :title => ""}
+			V
+		%ul.project_nav
+			%a{"href" => "#slide2"}
+				%li#one.selected
+			%a{"href" => "#two"}
+				%li#two
+			%a{"href" => "#three"}
+				%li#three
 	#slide3.slide{"data-slide" => "3", "data-stellar-background-ratio" => "0.5"}
 		.wrapper
 			=image_tag "slide3/freelance.png", alt: "", "data-stellar-ratio" => "1.4", "data-stellar-vertical-offset" => "-102"
@@ -24,6 +60,7 @@
 			=image_tag "slide3/psdtuts.png", alt: "", "data-stellar-ratio" => "1.5", "data-stellar-vertical-offset" => "-200"
 		%span.slideno Passions
 		%a.button{"data-slide" => "4", :title => ""}
+			V
 	#slide4.slide{"data-slide" => "4", "data-stellar-background-ratio" => "0"}
 		%span.slideno Contact
 		%span.parallaxbg which sprite?

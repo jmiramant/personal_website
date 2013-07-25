@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 # gem 'pg'
 gem 'sqlite3'
-gem "high_voltage"
+gem 'high_voltage'
+gem 'compass'
+gem "font-awesome-rails"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
